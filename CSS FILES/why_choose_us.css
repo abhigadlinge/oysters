@@ -231,7 +231,7 @@ a{
 }
 .header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item .title {
 	font-size: 16px;
-	color:#ea4636;
+	color:var(--main-color);
 	font-weight: 500;
 	line-height: 1;
 	padding:10px 0;
@@ -249,7 +249,7 @@ a{
 .header .menu > ul > li .sub-menu > ul > li > a:hover,
 .header .item-right a:hover,
 .header .menu > ul > li:hover > a{
-	color:#ea4636;
+	color:var(--main-color);
 }
 
 .mobile-menu-head,
@@ -507,7 +507,7 @@ ul{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #e91e63;
+	background-color: var(--main-color);
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
@@ -532,6 +532,7 @@ ul{
 .footer-col .social-links a{
 	display: inline-block;
 	height: 40px;
+	font-size: 2rem;
 	width: 40px;
 	background-color: rgba(255,255,255,0.2);
 	margin:0 10px 10px 0;
@@ -557,6 +558,9 @@ ul{
   .footer-col{
     width: 100%;
 }
+}
+.list-item .icon{
+	margin-right: 1rem;
 }
 
 

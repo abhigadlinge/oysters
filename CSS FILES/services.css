@@ -113,6 +113,19 @@ ul{
 a{
 	text-decoration: none;
 }
+.list-item .icon{
+	margin-right: 1rem;
+}
+.box-container .box {
+	position: relative;
+	height: 38rem;
+}
+
+.box-container .box .btn {
+		position: absolute;
+		bottom: 2rem;
+	}
+
 
 /* header */
 .header{
@@ -231,7 +244,7 @@ a{
 }
 .header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item .title {
 	font-size: 16px;
-	color:#ea4636;
+	color: var(--main-color);
 	font-weight: 500;
 	line-height: 1;
 	padding:10px 0;
@@ -249,7 +262,7 @@ a{
 .header .menu > ul > li .sub-menu > ul > li > a:hover,
 .header .item-right a:hover,
 .header .menu > ul > li:hover > a{
-	color:#ea4636;
+	color:var(--main-color);
 }
 
 .mobile-menu-head,
@@ -507,7 +520,7 @@ ul{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #e91e63;
+	background-color: var(--main-color);
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
@@ -532,6 +545,7 @@ ul{
 .footer-col .social-links a{
 	display: inline-block;
 	height: 40px;
+	font-size: 1.5rem;
 	width: 40px;
 	background-color: rgba(255,255,255,0.2);
 	margin:0 10px 10px 0;
@@ -599,10 +613,17 @@ ul{
     width: 45rem;
     height: 40rem;
     object-fit: cover;
-    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.4);
+	border: .1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.2);
     border-radius: .5rem;
+	perspective: 100;
 }
 
+.homeabout img:hover{
+	
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.4);
+
+}
 
 
 
@@ -662,10 +683,15 @@ ul{
   
   .box-container .box {
     border-radius: 0.8rem;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
     margin-top: 1rem;
     padding: 1rem;
+	border: .1rem solid rgba(0, 0, 0, 0.2);
     margin: 1rem;
+  }
+
+  .box-container .box:hover{
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+
   }
   
   

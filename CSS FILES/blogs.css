@@ -231,7 +231,7 @@ a{
 }
 .header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item .title {
 	font-size: 16px;
-	color:#ea4636;
+	color:var(--main-color);
 	font-weight: 500;
 	line-height: 1;
 	padding:10px 0;
@@ -249,7 +249,7 @@ a{
 .header .menu > ul > li .sub-menu > ul > li > a:hover,
 .header .item-right a:hover,
 .header .menu > ul > li:hover > a{
-	color:#ea4636;
+	color:var(--main-color);
 }
 
 .mobile-menu-head,
@@ -507,7 +507,7 @@ ul{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #e91e63;
+	background-color: var(--main-color);
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
@@ -596,7 +596,7 @@ ul{
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
     padding: 2rem 8%;
     padding-bottom: 5rem;
@@ -665,7 +665,23 @@ ul{
     line-height: 2;
   }
 
-  
+  .list-item .icon{
+	margin-right: 1rem;
+}
+
+.box-container .box {
+	position: relative;
+	height: 53rem;
+}
+
+.box-container .box .btn {
+		position: absolute;
+		bottom: 2rem;
+		font-size: 1.5rem;
+	}
+
+	
+
   
    
 @media (max-width:991px){
@@ -707,6 +723,9 @@ ul{
         margin-left: -1.5rem;
     }
     
+	.box-container .box{
+		height: 48rem;
+	}
   
    
  }

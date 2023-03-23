@@ -22,6 +22,40 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["time", "Session"],
+          ["", 25],
+          ["", 25],
+          ["", 25],
+          ["", 25],
+        ]);
+
+        var options = {
+          legend: "none",
+          pieSliceText: "label",
+          slices: {
+            0: { offset: 0.02 },
+            1: { offset: 0.02 },
+            2: { offset: 0.02 },
+            3: { offset: 0.02 },
+          },
+        };
+
+        var chart = new google.visualization.PieChart(
+          document.getElementById("piechart")
+        );
+        chart.draw(data, options);
+      }
+    </script>
   </head>
   <body>
     <!-- header start -->
@@ -30,7 +64,9 @@
         <div class="row v-center">
           <div class="header-item item-left">
             <div class="logo">
-              <a href="../index.html"> <img src="../IMAGES/oyester_logo.png" alt="" /></a>
+              <a href="../index.html">
+                <img src="../IMAGES/oyester_logo.png" alt=""
+              /></a>
             </div>
           </div>
           <!-- menu start here -->
@@ -49,37 +85,53 @@
                     <div class="list-item">
                       <!-- <h4 class="title">Men's Fashion</h4> -->
                       <ul>
-                        <li><a href="../HTML FILES/about.html">who we are </a></li>
-                          <li><a href="../HTML FILES/why_choose_us.html">why choose us</a></li>
-                          <li><a href="../HTML FILES/services.html"> services</a></li>
-                          <!-- <li><a href = "#"> events</a></li> -->
+                        <li>
+                          <a href="../HTML FILES/about.html">who we are </a>
+                        </li>
+                        <li>
+                          <a href="../HTML FILES/why_choose_us.html"
+                            >why choose us</a
+                          >
+                        </li>
+                        <li>
+                          <a href="../HTML FILES/services.html"> services</a>
+                        </li>
+                        <!-- <li><a href = "#"> events</a></li> -->
                       </ul>
                     </div>
                     <div class="list-item">
                       <ul>
                         <li>
                           <a href="#">
-                            <i class="fa fa-user"></i> 9970924019
+                            <i class="fa fa-phone icon"></i> 9834848219
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fa fa-user"></i> 9970924019
+                            <i class="fas fa-envelope icon"></i>
+                            info.oyesters@gmail.com
                           </a>
                         </li>
                         <li>
-                          <a href="#">
-                            <i class="fa fa-user"></i> 9970924019
+                          <a
+                            href="https://www.linkedin.com/company/oyesterstrainings/"
+                          >
+                            <i class="fab fa-linkedin icon"></i>
+                            oyesters trainings
                           </a>
                         </li>
                         <li>
-                          <a href="#">
-                            <i class="fa fa-user"></i> 9970924019
+                          <a
+                            href="https://instagram.com/oyesters_trainings?igshid=YmMyMTA2M2Y="
+                          >
+                            <i class="fab fa-instagram icon"></i>
+                            oyesters_trainings
                           </a>
                         </li>
                         <li>
-                          <a href="#">
-                            <i class="fa fa-user"></i> 9970924019
+                          <a href="https://www.facebook.com/OyestersTraining">
+                            <i class="fab fa-facebook icon"></i> Oyesters
+                            Training
                           </a>
                         </li>
                       </ul>
@@ -115,15 +167,34 @@
                     <div class="list-item">
                       <h4>
                         <a href="../HTML FILES/services.html" class="title">
-                          training services</a>
+                          training services</a
+                        >
                       </h4>
                       <ul>
-                        <li><a href="../HTML FILES/effective_communication.html">Effective Communication</a></li>
-                        <li><a href="../HTML FILES/executive_excellence.html">Executive Excellence </a></li>
-                        <li><a href="../HTML FILES/decision_making.html">Decision Making </a></li>
-                        <li><a href="../HTML FILES/interpreuning.html">Interpreting & Presenting Data </a></li>
                         <li>
-                          <a href="../HTML FILES/data_science.html">Data Science Training Using Excel</a>
+                          <a href="../HTML FILES/effective_communication.html"
+                            >Effective Communication</a
+                          >
+                        </li>
+                        <li>
+                          <a href="../HTML FILES/executive_excellence.html"
+                            >Executive Excellence
+                          </a>
+                        </li>
+                        <li>
+                          <a href="../HTML FILES/decision_making.html"
+                            >Decision Making
+                          </a>
+                        </li>
+                        <li>
+                          <a href="../HTML FILES/interpreuning.html"
+                            >Interpreting & Presenting Data
+                          </a>
+                        </li>
+                        <li>
+                          <a href="../HTML FILES/data_science.html"
+                            >Data Science Training Using Excel</a
+                          >
                         </li>
                       </ul>
                     </div>
@@ -141,8 +212,8 @@
                   <div class="sub-menu single-column-menu">
                     <ul>
                       <li><a href="../HTML FILES/blogs.html"> blog</a></li>
-                        <li><a href="../HTML FILES/product.html"> Product</a></li>
-                        <li><a href="#"> testimonials</a></li>
+                      <li><a href="../HTML FILES/product.html"> Product</a></li>
+                      <li><a href="#"> testimonials</a></li>
                     </ul>
                   </div>
                 </li>
@@ -167,276 +238,241 @@
 
     <div class="main-container">
       <div class="homeabout">
-        <div class="homecontent">
-          <h1>Interpreting & Presenting Data</h1>
-          <p>For The Faster, Accurate, and Reliable Solutions</p>
-          <div class="btn">get a quote</div>
-        </div>
+        <!-- <div class="homecontent">
+            <h1> effective communication</h1>
+            <p>  “Communication is the solvent of all problems and is the foundation for personal development.” </p>
+            <div class="btn"> get a quote</div>
+          </div>
+  
+          <div class="homeimage">
+            <figure>
+              <img src="../IMAGES/why_oyesters.jpeg" alt="" />
+            </figure>
+          </div> -->
 
-        <div class="homeimage">
-          <figure>
-            <img src="../IMAGES/why_oyesters.jpeg" alt="" />
-          </figure>
-        </div>
+        <h1>Interpreting & Presenting Data</h1>
+        <p>For The Faster, Accurate, and Reliable Solutions</p>
+        <div class="btn">get a quote</div>
       </div>
     </div>
 
     <div class="content">
-    
-      <p>Understanding data complexities with example</p>
-      <p>Presentation & Review Session</p>
+      <h3>about this service</h3>
+
       <p>
-        In class Live examples will be taken and given to the participants to
-        understand the topic much better.
-      </p>
-      <p>
-        Weekly assignments will be assigned to track and monitor the progress.
-      </p>
-      <p>
-        Pre & Post Training material in form of videos, articles & blogs will be
-        shared with the participants throughout the training program duration.
+        The 8 hours of intensive training will be the right platform for the
+        employees to enhance and upgrade their knowledge and skills. Content
+        which is to be delivered is precisely crafted to meet your requirements
+        and standards of Industry. The duration of the training is 4 days for 2
+        hours each.
       </p>
 
-      <h3>What is Data Interpretation?</h3>
+      <div class="pie-box">
+        <div class="box1 box">
+          <p>Effective C-Suite Speaking</p>
+          <h3>s1</h3>
+        </div>
+        <div class="box2 box">
+          <p>Presentation & Feedback</p>
+          <h3>s4</h3>
+        </div>
+        <div class="box3 box">
+          <p>Power of Grooming, Do's & Dont's of PPT</p>
+          <h3>s3</h3>
+        </div>
+        <div class="box4 box">
+          <p>Communicating with Impact in Boardroom</p>
+          <h3>s2</h3>
+        </div>
+
+        <div id="piechart"></div>
+      </div>
+
+      <h3 id="flow-content">training flow and content</h3>
+      <p>
+        The program will start with VILT sessions for total of 8 hours. The
+        sessions are of 2 hours each. The training program will engage
+        participants with various activities such as Q&A, Individual and group
+        activities, presentations, discussions, etc. And in the final session
+        the participants will also be asked to present their learning through a
+        Presentation.
+      </p>
+
+      <div class="flow-content-container">
+        <div class="left-content">
+          <h3>M1 - Effective C-Suite Speaking:</h3>
+
+          <ul>
+            <li>Know Your Audience</li>
+            <li>
+              SAPAE Model
+              <ul class="sub-list">
+                <li>S - survey</li>
+                <li>A - Analyze</li>
+                <li>P - Plan</li>
+                <li>A - Act</li>
+                <li>E – Evaluate</li>
+              </ul>
+            </li>
+
+            <h3>Session Breakdown:</h3>
+            <p>
+              • Identifying the needs and understanding and characteristics of
+              the audience.
+            </p>
+            <p>
+              • Effectively conveying the message in a clear and concise manner,
+              using techniques such as simplifying complex ideas and using
+              visual aids.
+            </p>
+            <p>• SAPAE Model: A framework for effective communication.</p>
+
+            <p>
+              • Individual activities will be taken during the sessions along
+              with micro learnings & Post session assignment.
+            </p>
+            <p>
+              • An assignment based on the SAPAE model to present in Session 2
+            </p>
+          </ul>
+        </div>
+        <div class="right-content">
+          <h3>M2 - Communicating with Impact in the Boardroom:</h3>
+          <ul>
+            <li>Strategies</li>
+            <li>Avoiding Clichés</li>
+            <li>Avoiding Jargon and Other Language Pitfalls</li>
+            <li>
+              Navigating Difficult Conversations: Avoiding Macroaggression’s in
+              the Boardroom
+            </li>
+            <li>Denotative & Connotative words</li>
+            <li>Use non-sexist language</li>
+
+            <h3>session breakdown</h3>
+            <p>
+              • Introduction to "Communicating with Impact in the Boardroom" and
+              provide an overview of the key subtopics that will be covered
+              during the session.
+            </p>
+            <p>
+              • Discussion on strategies for communicating effectively: Use of
+              clear and concise language, Active listening, and Effective body
+              language.
+            </p>
+            <p>
+              • Discussion on the importance of avoiding clichéd language,
+              Jargons & pitfalls in the boardroom and provide examples of common
+              phrases to avoid. Along with live examples & activities
+            </p>
+            <p>
+              • Navigating difficult conversations in the boardroom, how to
+              avoid macroaggression’s: such as racism, sexism, and
+              discrimination.
+            </p>
+            <p>
+              • Importance of using non-sexist language in the boardroom,
+              including avoiding gendered terms and using inclusive language.
+            </p>
+
+            <p>
+              • Activity: Engage in a group activity that allows participants to
+              practice the skills and strategies discussed during the session.
+            </p>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="line"></div>
+      <div class="flow-content-container">
+        <div class="left-content">
+          <h3>
+            	M3 - Power of Grooming & Do’s & Don'ts of Presentation in a Boardroom
+          </h3>
+
+          <ul>
+            <li>
+              POPTA Presentation Model
+              <ul class="sub-list">
+                <li>Purpose</li>
+                <li>Organization</li>
+                <li>Preparation</li>
+                <li>Time</li>
+                <li>Audience</li>
+              </ul>
+            </li>
+
+            <li>How to handle Q&A.</li>
+            <li>Non-Verbal Effective Communication.</li>
+
+            <h3>Session Breakdown:</h3>
+            <p>
+              • Introduction to Power of Grooming, Do’s & Don'ts of
+              Presentation, and importance of creating a good impression in a
+              professional setting
+            </p>
+            <p>
+              • Concept of the POPTA model, Discussion on each component of the
+              model
+            </p>
+            <p>
+              • Applications of POPTA model in a boardroom setting, and
+              answering questions effectively and professionally.
+            </p>
+            <p>
+              • Non-Verbal Effective Communication importance, Impact and
+              examples.
+            </p>
+          </ul>
+        </div>
+        <div class="right-content">
+          <h3>	M4 - Presentation & Feedback Session:</h3>
+          <ul>
+            <li>	This will involve creating a presentation & a report</li>
+            <li>	Driven by the participants and lead by the trainer</li>
+            <li>	Feedback, Key takeaways, Learning & Conclusion</li>
+            
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="line"></div>
+      <h3>Course Objective</h3>
       <ul>
-        <li>analyze</li>
-        <li>Interpret</li>
-        <li>Present</li>
-      </ul>
-
-      <h3>How to Interpret Data?</h3>
-      <ul>
-        <li>Research</li>
-        <li>Develop Findings</li>
-        <li>Develop Conclusions</li>
-        <li>Develop Recommendations</li>
-      </ul>
-      <h3>Graphical Representation of Data</h3>
-      <ul>
-        <li>Types of Data & their Representations</li>
-        <li>Types of Graphs for Representations</li>
-      </ul>
-      <h3>Set 1</h3>
-      <p>
-        The Interpreting and Presenting Data Training Program is designed to
-        help individuals develop the skills necessary to effectively analyze and
-        present data in a clear and concise manner. This program is suitable for
-        professionals in a variety of fields, including business, marketing,
-        research, and data analysis.
-      </p>
-      <p>
-        The program begins with an introduction to the fundamentals of data
-        interpretation and presentation, including how to identify key trends
-        and patterns in data sets and how to communicate findings to a variety
-        of audiences. Participants will also learn how to use various tools and
-        software programs, such as Excel and Tableau, to visualize and present
-        data in a clear and visually appealing way.
-      </p>
-      <p>
-        Throughout the program, participants will have the opportunity to work
-        on real-world projects and practice their skills through hands-on
-        exercises and group discussions. They will also receive feedback and
-        guidance from experienced instructors to help them improve their data
-        interpretation and presentation skills.
-      </p>
-      <p>
-        Upon completion of the program, participants will have a strong
-        understanding of how to interpret and present data in a professional and
-        effective manner, which will help them excel in their careers and make
-        informed decisions based on data analysis
-      </p>
-      <h3>Set 2</h3>
-      <p>
-        This training program is designed to teach participants how to
-        effectively interpret and present data in a clear and concise manner. It
-        will cover a variety of topics including:
-      </p>
-      <p>
-        Understanding data types and sources: Participants will learn how to
-        identify different types of data (e.g. quantitative, qualitative, etc.)
-        and where to find reliable data sources.
-      </p>
-      <p>
-        Analyzing and visualizing data: Participants will learn how to use tools
-        such as Excel and Tableau to analyze and visualize data in meaningful
-        ways. Crafting a compelling story: Participants will learn how to craft
-        a story using data to effectively communicate findings and persuade
-        others. Presenting data effectively: Participants will learn best
-        practices for presenting data, including using visual aids and
-        delivering presentations in a clear and concise manner.
-      </p>
-      <p>
-        Ethical considerations: Participants will also learn about ethical
-        considerations when interpreting and presenting data, such as avoiding
-        bias and accurately representing data. Throughout the training program,
-        participants will have the opportunity to practice these skills through
-        hands-on exercises and case studies. By the end of the program,
-        participants will have the skills and confidence to effectively
-        interpret and present data in a professional setting
-      </p>
-
-      <h3>Set 3</h3>
-      <p>
-        The Interpreting and Presenting Data Training Program is designed to
-        help individuals develop the skills necessary to effectively understand
-        and communicate data and findings to various audiences. Through a
-        combination of lectures, hands-on exercises, and real-world case
-        studies, participants will learn how to:
-      </p>
-      <p>
-        Identify and define key data points and trends in a dataset Use
-        appropriate visualization tools and techniques to present data
-        effectively Analyze and interpret data to identify patterns and
-        correlations Communicate data and findings clearly and effectively to
-        various audiences Use data to support decision-making and inform
-        strategy The program is suitable for professionals in a variety of
-        fields, including business, marketing, finance, and healthcare, who want
-        to improve their ability to understand and communicate data.
-        Participants will leave the program with a strong foundation in data
-        analysis and presentation skills, and the confidence to apply these
-        skills in their professional roles.
-      </p>
-
-      <h3>Training Flow 1</h3>
-      <ol>
+        <li>Developing confidence and polish as a public speaker: This might involve working on stage presence, voice and language use, and the ability to connect with an audience.</li>	
         <li>
-          Sure, here is a general outline of the steps involved in a training
-          program on interpreting and presenting data: Define the purpose and
-          audience for the data presentation. This will help determine the types
-          of data to collect and how to present it in a way that is relevant and
-          understandable to the audience.
+          Enhancing communication skills: This could include learning how to effectively convey complex ideas, deliver persuasive arguments, and handle difficult questions.
         </li>
         <li>
-          Collect and organize the data. This may involve gathering data from
-          various sources, cleaning and preparing the data for analysis, and
-          organizing it in a way that makes it easy to understand. Analyze the
-          data. This may involve using statistical techniques to identify
-          trends, patterns, and relationships in the data.
+          Building leadership presence: A C-suite speaker training program might also focus on helping participants project confidence, credibility, and authority when speaking in public.
         </li>
         <li>
-          Visualize the data. This may involve creating charts, graphs, and
-          other visualizations to help communicate the data in a clear and
-          concise way. Present the data. This may involve creating a
-          presentation or report, or simply communicating the results of the
-          analysis to the audience
+          Enhancing presentation skills: Participants might also work on creating and delivering compelling presentations, including the use of visual aids and other multimedia tools.
         </li>
         <li>
-          Evaluate the effectiveness of the data presentation. This may involve
-          collecting feedback from the audience and making adjustments as
-          necessary to improve the presentation in the future
-        </li>
-      </ol>
-      <h3>Outline 2</h3>
+          Overall, the goal of a C-suite speaker training program is to help participants become more effective, confident, and influential communicators in a variety of settings.
 
-      <ol>
-        <li>
-          Introduction to data interpretation and visualization: This module can
-          cover the basics of data interpretation and visualization, including
-          the importance of accurately interpreting and presenting data, common
-          pitfalls to avoid, and best practices for effectively communicating
-          data.
         </li>
-        <li>
-          Gathering and preparing data: In this module, participants can learn
-          how to gather data from various sources, including databases, surveys,
-          and online platforms. They can also learn how to clean, transform, and
-          organize data in preparation for analysis and visualization.
-        </li>
-        <li>
-          Exploratory data analysis: This module can teach participants how to
-          use various tools and techniques to explore and understand their data,
-          including statistical summaries, plots, and charts. Visualization and
-          presentation: This module can focus on how to create effective
-          visualizations and presentations of data, including selecting the
-          appropriate chart or graph type, using design principles to create
-          visually appealing and easy-to-understand visualizations, and using
-          software tools to create and format visualizations.
-        </li>
-        <li>
-          Advanced data interpretation and visualization: This module can cover
-          more advanced topics in data interpretation and visualization, such as
-          working with large and complex data sets, using more advanced software
-          tools and programming languages, and creating interactive and dynamic
-          visualizations.
-        </li>
-        <li>
-          Case studies and projects: Throughout the training program,
-          participants can work on real-world case studies and projects to apply
-          the concepts and skills they have learned and to practice interpreting
-          and presenting data in a practical context.
-        </li>
-        <li>
-          Final assessment and evaluation: The training program can conclude
-          with a final assessment or evaluation to measure participants'
-          knowledge and skills in interpreting and presenting data. This could
-          include a written exam, a presentation, or a project.
-        </li>
-      </ol>
 
-      <h3>Introduction to Data Interpretation and Visualization:</h3>
+	
 
-      <p>Basics of data interpretation and visualization</p>
+      <h3>note</h3>
       <p>
-        mportance of accurately interpreting and presenting data common pitfalls
-        to avoid.
-      </p>
-      <p>Best practices for effectively communicating data.</p>
- 
-      <h3>
-        Gathering and Preparing Data: 
-
-      </h3>
-
-      <p>
-        How to gather data from various sources, including databases, surveys, and online platforms. 
-        How to clean, transform, and organize data in preparation for analysis and visualization.
-        Collect-Analyze-Visualize-Feedback (Loop)
-        
-        
-      </p>
-
-      <h3>
-        Visualization and Presentation: 
-
-      </h3>
-      <p>
-        
- How to create effective visualizations and presentations of data
- Selecting Right Graphical Representations
- Charts,Tables, Graphs & Maps
-  Working with large and complex data sets
- 
-      </p>
-
-      <h3>
-        Presentation & Feedback Session:
-
-      </h3>
-      <p>
-        resent the data. This will involve creating a presentation & a report 
-Driven by the participants and lead by the trainer
-Feedback, Key takeaways, Learning & Conclusion
-
+        1. The course content can be modified as per the requirements and batch
+        profile.
       </p>
       <p>
-        
-Exploratory data analysis: This module can teach participants how to use various tools and techniques to explore and understand their data, including statistical summaries, plots, and charts.
-
+        2. Participants are expected to attend the training attentively and do
+        participate in them.
       </p>
-      <p>
-        This module can cover more advanced topics in data interpretation and visualization, such as working with large and complex data sets, using more advanced software tools and programming languages, and creating interactive and dynamic visualizations.
+      <p>3. Recommended batch size for this program is 25-30 participants.</p>
 
-
-      </p>
-      <p>
-        The Interpreting and Presenting Data Training Program is designed to help individuals develop the skills necessary to effectively analyze and present data in a clear and concise manner. This program is suitable for professionals in a variety of fields, including business, marketing, research, and data analysis.
-The program begins with an introduction to the fundamentals of data interpretation and presentation, including how to identify key trends and patterns in data sets and how to communicate findings to a variety of audiences. Participants will also learn how to use various tools and software programs, such as Excel and Tableau, to visualize and present data in a clear and visually appealing way.
-Throughout the program, participants will have the opportunity to work on real-world projects and practice their skills through hands-on exercises and group discussions. They will also receive feedback and guidance from experienced instructors to help them improve their data interpretation and presentation skills.
-
-
-      </p>
+      <br />
+      <br />
+      <br />
     </div>
-
     <!-- footer section starts  -->
 
     <footer class="footer">
@@ -445,37 +481,54 @@ Throughout the program, participants will have the opportunity to work on real-w
           <div class="footer-col">
             <h4>quick links</h4>
             <ul>
-                <li><a href="./HTML FILES/about.html">about us</a></li>
-                <li><a href="./HTML FILES/services.html">our services</a></li>
-                <li><a href="./HTML FILES/product.html">product</a></li>
-                <li><a href="./HTML FILES/why_choose_us.html">why choose us</a></li>
+              <li><a href="../HTML FILES/about.html">about us</a></li>
+              <li><a href="../HTML FILES/services.html">our services</a></li>
+              <li><a href="../HTML FILES/product.html">product</a></li>
+              <li>
+                <a href="../HTML FILES/why_choose_us.html">why choose us</a>
+              </li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>extra links</h4>
             <ul>
-                <li><a href="./HTML FILES/contact.html">contact us</a></li>
-                <li><a href="./HTML FILES/blogs.html">blog</a></li>
-                <li><a href="./HTML FILES/testimonials.html">testimonials</a></li>
-                <li><a href="./HTML FILES/iot.html"> blog page</a></li>
+              <li><a href="../HTML FILES/contact.html">contact us</a></li>
+              <li><a href="../HTML FILES/blogs.html">blog</a></li>
+              <li>
+                <a href="../HTML FILES/testimonials.html">testimonials</a>
+              </li>
+              <li><a href="../HTML FILES/iot.html"> blog page</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>contact info </h4>
+            <h4>contact info</h4>
             <ul>
-                <li><a href="#"> +919834848219 +917020639005  </a></li>
-                <li><a href="#">339, M. G. Chowk, Raver, Jalgaon, Maharashtra. 425508</a></li>
-                <li><a href="#"> info@oyesters.in</a></li>
-                <li><a href="#">info.oyesters@gmail.com</a></li>
+              <li><a href="#"> +919834848219 +917020639005 </a></li>
+              <li>
+                <a href="#"
+                  >339, M. G. Chowk, Raver, Jalgaon, Maharashtra. 425508</a
+                >
+              </li>
+              <li><a href="#"> info@oyesters.in</a></li>
+              <li><a href="#">info.oyesters@gmail.com</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>follow us</h4>
             <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.facebook.com/OyestersTraining"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com/oyesterstrainin?s=20"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://instagram.com/oyesters_trainings?igshid=YmMyMTA2M2Y="
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/company/oyesterstrainings/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
             </div>
           </div>
         </div>
