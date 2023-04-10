@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>oyester training</title>
+
+    <!-- css file link  -->
+    <link rel="stylesheet" href="../CSS FILES/interprening.css" />
+
+    <!-- font-awesome file link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <!-- swiper js link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["time", "Session"],
+          ["", 25],
+          ["", 25],
+          ["", 25],
+          ["", 25],
+        ]);
+
+        var options = {
+          legend: "none",
+          pieSliceText: "label",
+          slices: {
+            0: { offset: 0.02 },
+            1: { offset: 0.02 },
+            2: { offset: 0.02 },
+            3: { offset: 0.02 },
+          },
+        };
+
+        var chart = new google.visualization.PieChart(
+          document.getElementById("piechart")
+        );
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="header">
+      <div class="container">
+        <div class="row v-center">
+          <div class="header-item item-left">
+            <div class="logo">
+              <a href="../index.html">
+                <img src="../IMAGES/oyester_logo.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <!-- menu start here -->
+          <div class="header-item item-center">
+            <div class="menu-overlay"></div>
+            <nav class="menu">
+              <div class="mobile-menu-head">
+                <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="menu-main">
+                <li class="menu-item-has-children">
+                  <a href="#"> company <i class="fa fa-angle-down"></i></a>
+                  <div class="sub-menu mega-menu mega-menu-column-4">
+                    <div class="list-item">
+                      <!-- <h4 class="title">Men's Fashion</h4> -->
+                      <ul>
+                        <li>
+                          <a href="../HTML FILES/about.html">who we are </a>
+                        </li>
+                        <li>
+                          <a href="../HTML FILES/why_choose_us.html"
+                            >why choose us</a
+                          >
+                        </li>
+                        <li>
+                          <a href="../HTML FILES/services.html"> services</a>
+                        </li>
+                        <!-- <li><a href = "#"> events</a></li> -->
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-phone icon"></i> 9834848219
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fas fa-envelope icon"></i>
+                            info.oyesters@gmail.com
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.linkedin.com/company/oyesterstrainings/"
+                          >
+                            <i class="fab fa-linkedin icon"></i>
+                            oyesters trainings
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://instagram.com/oyesters_trainings?igshid=YmMyMTA2M2Y="
+                          >
+                            <i class="fab fa-instagram icon"></i>
+                            oyesters_trainings
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.facebook.com/OyestersTraining">
+                            <i class="fab fa-facebook icon"></i> Oyesters
+                            Training
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <img src="../IMAGES/pic-4.jpg" alt="new Product" />
+                    </div>
+                    <div class="list-item">
+                      <img src="../IMAGES/pic-6.jpg" alt="shop" />
+                    </div>
+                  </div>
+                </li>
+
+                <li class="menu-item-has-children">
+                  <a href="#">Services <i class="fa fa-angle-down"></i></a>
+                  <div class="sub-menu mega-menu mega-menu-column-4">
+                    <div class="list-item">
+                      <h4>
+                        <a href="../HTML FILES/services.html" class="title">
+                          development services</a
+                        >
+                      </h4>
+                      <ul>
+                        <li><a href="#">Enterprise Integration </a></li>
+                        <li>
+                          <a href="#">Application & Platform Development </a>
+                        </li>
+                        <li><a href="#">Software Product Engineering </a></li>
+                        <li><a href="#"> Devops</a></li>
+                        <li><a href="#">Cloud & Infrastructure </a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <h4>
+                        <a href="../HTML FILES/services.html" class="title">
+                          training services</a
+                        >
+                      </h4>
+                      <ul>
+                        <li>
+                          <a href="../HTML FILES/effective_communication.html"
+                            >Effective Communication</a
+                          >
+                        </li>
+                        <li>
+                          <a href="../HTML FILES/executive_excellence.html"
+                            >Executive Excellence
+                          </a>
+                        </li>
+                        <li>
+                          <a href="../HTML FILES/decision_making.html"
+                            >Decision Making
+                          </a>
+                        </li>
+                        <li>
+                          <a href="../HTML FILES/interpreuning.html"
+                            >Interpreting & Presenting Data
+                          </a>
+                        </li>
+                        <li>
+                          <a href="../HTML FILES/data_science.html"
+                            >Data Science Training Using Excel</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <img src="../IMAGES/pic-1.jpg" alt="new Product" />
+                    </div>
+                    <div class="list-item">
+                      <img src="../IMAGES/pic-3.jpg" alt="shop" />
+                    </div>
+                  </div>
+                </li>
+
+                <li class="menu-item-has-children">
+                  <a href="#">resources <i class="fas fa-angle-down"></i></a>
+                  <div class="sub-menu single-column-menu">
+                    <ul>
+                      <li><a href="../HTML FILES/blogs.html"> blog</a></li>
+                      <li><a href="../HTML FILES/product.html"> Product</a></li>
+                      <li><a href="#"> testimonials</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <a href="../HTML FILES/contact.html">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- menu end here -->
+          <div class="header-item item-right">
+            <!-- mobile menu trigger -->
+            <div class="mobile-menu-trigger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <div class="main-container">
+      <div class="homeabout">
+        <!-- <div class="homecontent">
+            <h1> effective communication</h1>
+            <p>  “Communication is the solvent of all problems and is the foundation for personal development.” </p>
+            <div class="btn"> get a quote</div>
+          </div>
+  
+          <div class="homeimage">
+            <figure>
+              <img src="../IMAGES/why_oyesters.jpeg" alt="" />
+            </figure>
+          </div> -->
+
+        <h1>Cloud & Infrastructure</h1>
+        <p>For The Faster, Accurate, and Reliable Solutions</p>
+        <div class="btn">get a quote</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <h3>about this service</h3>
+
+      <p>
+        The 8 hours of intensive training will be the right platform for the
+        employees to enhance and upgrade their knowledge and skills. Content
+        which is to be delivered is precisely crafted to meet your requirements
+        and standards of Industry. The duration of the training is 4 days for 2
+        hours each.
+      </p>
+
+      <div class="pie-box">
+        <div class="box1 box">
+          <p>Effective C-Suite Speaking</p>
+          <h3>s1</h3>
+        </div>
+        <div class="box2 box">
+          <p>Presentation & Feedback</p>
+          <h3>s4</h3>
+        </div>
+        <div class="box3 box">
+          <p>Power of Grooming, Do's & Dont's of PPT</p>
+          <h3>s3</h3>
+        </div>
+        <div class="box4 box">
+          <p>Communicating with Impact in Boardroom</p>
+          <h3>s2</h3>
+        </div>
+
+        <div id="piechart"></div>
+      </div>
+
+      <h3 id="flow-content">training flow and content</h3>
+      <p>
+        The program will start with VILT sessions for total of 8 hours. The
+        sessions are of 2 hours each. The training program will engage
+        participants with various activities such as Q&A, Individual and group
+        activities, presentations, discussions, etc. And in the final session
+        the participants will also be asked to present their learning through a
+        Presentation.
+      </p>
+
+      <div class="flow-content-container">
+        <div class="left-content">
+          <h3>M1 - Effective C-Suite Speaking:</h3>
+
+          <ul>
+            <li>Know Your Audience</li>
+            <li>
+              SAPAE Model
+              <ul class="sub-list">
+                <li>S - survey</li>
+                <li>A - Analyze</li>
+                <li>P - Plan</li>
+                <li>A - Act</li>
+                <li>E – Evaluate</li>
+              </ul>
+            </li>
+
+          
+          </ul>
+        </div>
+        <div class="right-content">
+          <h3>Session Breakdown:</h3>
+          <p>
+            • Identifying the needs and understanding and characteristics of
+            the audience.
+          </p>
+          <p>
+            • Effectively conveying the message in a clear and concise manner,
+            using techniques such as simplifying complex ideas and using
+            visual aids.
+          </p>
+          <p>• SAPAE Model: A framework for effective communication.</p>
+
+          <p>
+            • Individual activities will be taken during the sessions along
+            with micro learnings & Post session assignment.
+          </p>
+          <p>
+            • An assignment based on the SAPAE model to present in Session 2
+          </p>
+        </div>
+      </div>
+      <div class="line"></div>
+
+
+      <div class="flow-content-container">
+        <div class="left-content">
+          <h3>M2 - Communicating with Impact in the Boardroom:</h3>
+          <ul>
+            <li>Strategies</li>
+            <li>Avoiding Clichés</li>
+            <li>Avoiding Jargon and Other Language Pitfalls</li>
+            <li>
+              Navigating Difficult Conversations: Avoiding Macroaggression’s in
+              the Boardroom
+            </li>
+            <li>Denotative & Connotative words</li>
+            <li>Use non-sexist language</li>
+
+          
+          </ul>
+        </div>
+        <div class="right-content">
+          <h3>session breakdown</h3>
+            <p>
+              • Introduction to "Communicating with Impact in the Boardroom" and
+              provide an overview of the key subtopics that will be covered
+              during the session.
+            </p>
+            <p>
+              • Discussion on strategies for communicating effectively: Use of
+              clear and concise language, Active listening, and Effective body
+              language.
+            </p>
+            <p>
+              • Discussion on the importance of avoiding clichéd language,
+              Jargons & pitfalls in the boardroom and provide examples of common
+              phrases to avoid. Along with live examples & activities
+            </p>
+            <p>
+              • Navigating difficult conversations in the boardroom, how to
+              avoid macroaggression’s: such as racism, sexism, and
+              discrimination.
+            </p>
+            <p>
+              • Importance of using non-sexist language in the boardroom,
+              including avoiding gendered terms and using inclusive language.
+            </p>
+
+            <p>
+              • Activity: Engage in a group activity that allows participants to
+              practice the skills and strategies discussed during the session.
+            </p>
+        </div>
+      </div>
+
+
+
+      <div class="line"></div>
+
+
+      <div class="flow-content-container">
+        <div class="left-content">
+          <h3>
+            	M3 - Power of Grooming & Do’s & Don'ts of Presentation in a Boardroom
+          </h3>
+
+          <ul>
+            <li>
+              POPTA Presentation Model
+              <ul class="sub-list">
+                <li>Purpose</li>
+                <li>Organization</li>
+                <li>Preparation</li>
+                <li>Time</li>
+                <li>Audience</li>
+              </ul>
+            </li>
+
+            <li>How to handle Q&A.</li>
+            <li>Non-Verbal Effective Communication.</li>
+
+            
+          </ul>
+        </div>
+        <div class="right-content">
+          <h3>Session Breakdown:</h3>
+          <p>
+            • Introduction to Power of Grooming, Do’s & Don'ts of
+            Presentation, and importance of creating a good impression in a
+            professional setting
+          </p>
+          <p>
+            • Concept of the POPTA model, Discussion on each component of the
+            model
+          </p>
+          <p>
+            • Applications of POPTA model in a boardroom setting, and
+            answering questions effectively and professionally.
+          </p>
+          <p>
+            • Non-Verbal Effective Communication importance, Impact and
+            examples.
+          </p>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="flow-content-container">
+        <div class="left-content">
+          <h3>	M4 - Presentation & Feedback Session:</h3>
+          <ul>
+            <li>	This will involve creating a presentation & a report</li>
+            <li>	Driven by the participants and lead by the trainer</li>
+            <li>	Feedback, Key takeaways, Learning & Conclusion</li>
+            
+          </ul>
+        </div>
+        <div class="right-content">
+         
+        </div>
+      </div>
+
+
+      <div class="line"></div>
+      <h3>Course Objective</h3>
+      <ul>
+        <li>Developing confidence and polish as a public speaker: This might involve working on stage presence, voice and language use, and the ability to connect with an audience.</li>	
+        <li>
+          Enhancing communication skills: This could include learning how to effectively convey complex ideas, deliver persuasive arguments, and handle difficult questions.
+        </li>
+        <li>
+          Building leadership presence: A C-suite speaker training program might also focus on helping participants project confidence, credibility, and authority when speaking in public.
+        </li>
+        <li>
+          Enhancing presentation skills: Participants might also work on creating and delivering compelling presentations, including the use of visual aids and other multimedia tools.
+        </li>
+        <li>
+          Overall, the goal of a C-suite speaker training program is to help participants become more effective, confident, and influential communicators in a variety of settings.
+
+        </li>
+
+	
+
+      <h3>note</h3>
+      <p>
+        1. The course content can be modified as per the requirements and batch
+        profile.
+      </p>
+      <p>
+        2. Participants are expected to attend the training attentively and do
+        participate in them.
+      </p>
+      <p>3. Recommended batch size for this program is 25-30 participants.</p>
+
+      <br />
+      <br />
+      <br />
+    </div>
+    <!-- footer section starts  -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>quick links</h4>
+            <ul>
+              <li><a href="../HTML FILES/about.html">about us</a></li>
+              <li><a href="../HTML FILES/services.html">our services</a></li>
+              <li><a href="../HTML FILES/product.html">product</a></li>
+              <li>
+                <a href="../HTML FILES/why_choose_us.html">why choose us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>extra links</h4>
+            <ul>
+              <li><a href="../HTML FILES/contact.html">contact us</a></li>
+              <li><a href="../HTML FILES/blogs.html">blog</a></li>
+              <li>
+                <a href="../HTML FILES/testimonials.html">testimonials</a>
+              </li>
+              <li><a href="../HTML FILES/iot.html"> blog page</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>contact info</h4>
+            <ul>
+              <li><a href="#"> +919834848219 +917020639005 </a></li>
+              <li>
+                <a href="#"
+                  >339, M. G. Chowk, Raver, Jalgaon, Maharashtra. 425508</a
+                >
+              </li>
+              <li><a href="#"> info@oyesters.in</a></li>
+              <li><a href="#">info.oyesters@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/OyestersTraining"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com/oyesterstrainin?s=20"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://instagram.com/oyesters_trainings?igshid=YmMyMTA2M2Y="
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/company/oyesterstrainings/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="../JS FILES/index.js"></script>
+  </body>
+</html>
