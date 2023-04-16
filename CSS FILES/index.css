@@ -571,15 +571,15 @@ a{
 .logo-slider-track{
     display: flex;
     width: calc(100px*14);
-    animation: scroll 40s linear infinite;
+    animation: scroll 8s linear infinite;
 }
 
 @keyframes scroll {
     0% {
-        transform: translateX(-10%);
+        transform: translateX(2%);
     }
     100% {
-        transform: translateX(10%);
+        transform: translateX(5%);
     }
 }
 
@@ -705,12 +705,31 @@ section {
 	box-shadow: 0rem 0rem 1rem rgba(0,0,0,0.1);
 	margin-right: 2rem;
 	padding: 1rem 2rem;
-	display: flex;
+	/* display: flex; */
 	gap: 1rem;
 
 }
 
-.keyfeatures .icon i , .feature-content p{
+.keyfeatures .icon i{
+	font-size: 3rem;
+    align-items: justify;
+	justify-content: center;
+	width: 8rem;
+	height: 8rem;
+	margin-left: 6rem;
+	margin-top: 1rem;
+	color: white;
+	margin-bottom: 2rem;
+	background-color: black;
+	border-radius: 50%;
+	padding: 2.3rem;
+	border: .2rem solid black;
+	animation: border infinite 5s;
+}
+
+
+
+.feature-content p {
 	font-size: 1.7rem;
     align-items: justify;
     line-height: 2.5rem;
@@ -736,7 +755,7 @@ section {
      margin-right: 2rem;
 	 border: .05rem solid rgba(0, 0, 0, 0.2);
 	 border-radius: .7rem;
-
+     animation-duration: 0ms;
   }
   
 
@@ -928,6 +947,11 @@ ul{
 .footer-col .social-links a:hover{
 	color: #24262b;
 	background-color: #ffffff;
+}
+
+.footer-col i{
+	font-size: 2rem;
+	padding: 1rem;
 }
 
 /*responsive*/
