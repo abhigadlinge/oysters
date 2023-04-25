@@ -83,3 +83,47 @@ var swiper = new Swiper(".swiper", {
       prevEl: ".swiper-button-prev",
     },
  });
+
+
+
+
+
+ 
+ 
+var swiper = new Swiper(".slide-content", {
+    autoplay:{
+     delay:5000 ,
+    },
+     slidesPerView: 4,
+     spaceBetween: 25,
+     loop: true,
+     centerSlide: 'true',
+     fade: 'true',
+     grabCursor: 'true',
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+       dynamicBullets: true,
+     },
+     navigation: {
+       nextEl: ".swiper-button-next",
+       prevEl: ".swiper-button-prev",
+     },
+ 
+     breakpoints:{
+         320: {
+             slidesPerView: 1,
+         },
+         480: {
+             slidesPerView: 2,
+         },
+         768: {
+             slidesPerView: 3,
+         },
+         1200: {
+          slidesPerView: 4,
+        },
+     },
+   });
+  
+ 
