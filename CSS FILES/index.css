@@ -1026,7 +1026,7 @@ section {
   
   .slide-container h2{
 	 font-size: 1.5rem;
-	 margin-bottom: .5rem;
+	 margin-bottom: .9rem;
 	 font-weight: 600;
 	 margin-top: -1rem;
   }
@@ -1295,3 +1295,20 @@ ul{
 
 
 
+.reviews i{
+	font-size: 3rem;
+	color: var(--main-color);
+	margin-top: 1rem;
+}
+
+.slide-content{
+	justify-content: center;
+	text-align: center;
+	height: 30rem;
+}
+
+
+.reviews h3{
+	font-size: 1.5rem;
+	margin-top: 1rem;
+}

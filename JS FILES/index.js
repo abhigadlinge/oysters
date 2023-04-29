@@ -111,17 +111,14 @@ var swiper = new Swiper(".slide-content", {
      },
  
      breakpoints:{
-         320: {
-             slidesPerView: 1,
-         },
-         480: {
-             slidesPerView: 2,
-         },
-         768: {
-             slidesPerView: 3,
-         },
-         1200: {
-          slidesPerView: 4,
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
         },
      },
    });

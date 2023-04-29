@@ -518,6 +518,7 @@ a{
     flex-direction: column;
     gap: 2rem;
     flex: 1 1 40rem;
+	margin-top: 8rem;
 }
 
 
@@ -617,7 +618,7 @@ a{
 
 .success-journey-content .line{
     width: .2rem;
-    height: 15rem;
+    height: 12rem;
     background-color: black;
     justify-content: center;
     margin-left: .9rem;
@@ -633,6 +634,8 @@ a{
     flex-direction: column;
     top: 2rem;
     color: var(--main-color);
+	text-align: center;
+	right: 5rem;
 }
 
 .journey-left .success-content{
@@ -663,24 +666,24 @@ a{
 }
 
 .hi-1{
-    margin-top: 15rem;
+    margin-top: 12rem;
 }
 
 .hi-2{
-    margin-top: 16.5rem;
+    margin-top: 10rem;
 }
 .hi-3{
-    margin-top: 16.5rem;
+    margin-top: 15rem;
 }
 
 .hi-4{
     margin-top: 0rem;
 }
 .hi-5{
-    margin-top: 16.5rem;
+    margin-top: 15rem;
 }
 .hi-6{
-    margin-top: 16.5rem;
+    margin-top: 15rem;
 }
 
 
@@ -841,6 +844,8 @@ a{
     justify-content: space-between;
     margin: 0 auto;
     margin-bottom: 5rem;
+	gap: 3rem;
+	flex-wrap: wrap;
 
   }
 
@@ -877,6 +882,13 @@ a{
 	background-color: black;
 }
 
+
+*{
+	text-align: justify;
+}
+.content span{
+	font-weight: bold ;
+}
  .social-content{
     display: flex;
     flex-wrap: wrap;
@@ -1028,6 +1040,9 @@ ul{
     }
     
 
+	.main-container .images  {
+        margin-top: 0rem;
+    }
 
     .main-container .images .img2 img {
         height: 30rem;
@@ -1042,23 +1057,39 @@ ul{
     }
 
     .hi-1{
-        margin-top: 33rem;
+        margin-top: 5rem;
     }
     .hi-2 {
-        margin-top: 33.5rem;
+        margin-top: 5rem;
     }
 
     .hi-3 {
-        margin-top: 34.5rem;
+        margin-top: 5rem;
+    }
+
+	.hi-4 {
+        margin-top: 5rem;
     }
 
     .hi-5 {
-        margin-top: 34.5rem;
+        margin-top: 5rem;
     }
 
     .hi-6 {
-        margin-top: 34.5rem;
+        margin-top: 5rem;
     }
+
+	.journey-bar{
+		display: none;
+	}
+
+	.success-journey-content{
+		gap: 5rem;
+	}
+
+	.contentpara{
+		padding-right: 3rem;
+	}
 
     .container2{
         margin-top: -6rem;

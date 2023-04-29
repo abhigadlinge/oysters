@@ -695,7 +695,12 @@ ul{
   }
   
   
-  
+  .content h2{
+	font-size: 1.7rem;
+    margin-bottom: 1rem;
+    align-items: justify;
+    line-height: 2.5rem;
+  }
   .box-container .box .image img {
     height: 100%;
     width: 100%;
