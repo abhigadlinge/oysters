@@ -546,6 +546,19 @@ ul{
 	background-color: #ffffff;
 }
 
+.images{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 5rem;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+.images img{
+	width: 85vw;
+	margin: 0 auto;
+}
+
 /*responsive*/
 @media(max-width: 767px){
   .footer-col{
